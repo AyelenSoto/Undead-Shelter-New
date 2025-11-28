@@ -1,0 +1,17 @@
+.fondo {
+    background-color: black; 
+    min-height: 500vh; /* Altura de la página */   
+}
+.imagen {
+    position: relative;
+    width: 100vw;
+    min-height: 100vh;
+    overflow-x: hidden; /* Oculta el scroll horizontal */
+}
+
+.margen{
+    padding-left: 120px;
+    padding-right: 0px;
+    box-sizing: border-box; /* asegura que el padding no haga overflow */
+}
+

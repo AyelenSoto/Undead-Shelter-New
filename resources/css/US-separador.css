@@ -1,0 +1,10 @@
+.separador {
+    width: 600px;               /* ancho del rectángulo */
+    height: 1.5px;              /* alto del rectángulo */
+    background-color: #740505;  /* color del rectángulo */
+    border-radius: 10px;        /* esquinas redondeadas opcional */
+    margin: 0 auto;  
+
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.616);
+    transition: all 0.3s ease;
+}

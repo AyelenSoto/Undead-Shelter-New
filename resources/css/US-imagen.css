@@ -1,0 +1,13 @@
+.imagenderecha {
+    position: absolute;
+    width: 850px; /* Ajusta el tamaño que quieras */
+    height: auto;
+    left: -80px;
+    top: 85px;
+    z-index: 2;
+    transform: rotate(25deg);
+
+    filter: drop-shadow(0 0 15px rgba(255, 255, 255, 0.8))
+            drop-shadow(0 0 25px rgba(255, 255, 255, 0.9));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}

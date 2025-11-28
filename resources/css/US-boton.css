@@ -1,0 +1,63 @@
+.botontexto{
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.botontexto2{
+    color: white;
+    font-size: 15px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+.botoninicio{
+    background: linear-gradient(135deg, #b70404, #7d0000, #6a0707);
+    border-radius: 8px;
+    display: block;
+    width: auto;
+    padding: 12px 20px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 32%;
+    margin-right:  32%;
+
+    box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.6),
+        inset 0 0 10px rgba(167, 2, 2, 0.9),
+        inset 0 -5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+}
+.botoninicio:hover {
+    box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 5px rgb(69, 2, 2),
+        inset 0 -8px 20px rgba(0,0,0,0.4);
+    transform: scale(1.05);
+}
+
+.barralateral-btn {
+    padding: 12px 20px;
+    background: rgba(255, 0, 0, 0.136);
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.6),
+        inset 0 0 10px rgba(167, 2, 2, 0.9),
+        inset 0 -5px 15px rgba(110, 2, 2, 0.532);
+    transition: all 0.3s ease;
+}
+
+.barralateral-btn:hover {
+    background: #f80000ab;
+    box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 5px rgb(69, 2, 2),
+        inset 0 -8px 20px rgba(0,0,0,0.4);
+    transform: scale(1.05);
+    transform: translateY(-2px);
+}
+
+.barralateral-btn:active {
+    transform: translateY(0);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.803);
+}

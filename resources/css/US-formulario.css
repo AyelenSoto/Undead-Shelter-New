@@ -1,0 +1,135 @@
+.seccion-formularios {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 20px;
+            width: 100%;
+        }
+
+.contenedorform {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+    max-width: 1100px;
+    justify-content: center;
+    flex-wrap: wrap;
+ }
+
+        .formulario-moderno {
+            background-color: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 20px;
+            padding: 40px;
+            flex: 1;
+            min-width: 320px;
+            max-width: 500px;
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+        }
+
+        .titulo-form {
+            color: white;
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .texto-ayuda {
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 14px;
+            margin-top: 15px;
+            cursor: pointer;
+            transition: color 0.3s ease;
+        }
+
+        .texto-ayuda:hover {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #ffffff;
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+
+        .form-group input {
+            width: 100%;
+            padding: 12px 16px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            color: white;
+            font-size: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus {
+            outline: none;
+            border-color: #a78bfa;
+            background-color: rgba(255, 255, 255, 0.15);
+        }
+
+        .form-group input::placeholder {
+            color: rgba(255, 255, 255, 0.5);
+        }
+
+        .form-check-custom {
+            display: flex;
+            align-items: center;
+            margin-bottom: 25px;
+            gap: 10px;
+        }
+
+        .form-check-custom input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+            cursor: pointer;
+        }
+
+        .form-check-custom label {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .btn-moderno {
+            width: 100%;
+            padding: 14px;
+            background: linear-gradient(135deg, #7a0101 0%, #500101 100%);
+            border: none;
+            border-radius: 10px;
+            color: white;
+            font-size: 16px;
+            font-weight: 700;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+        }
+
+        .btn-moderno:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 20px rgba(110, 3, 3, 0.4);
+
+            box-shadow: 
+                0 0 18px rgba(250, 14, 14, 0.9),
+                inset 0 0 5px rgb(69, 2, 2),
+                inset 0 -8px 20px rgba(0,0,0,0.4);
+            transform: scale(1.05);
+            transform: translateY(-2px);
+        }
+
+        @media (max-width: 768px) {
+            .contenedor {
+                flex-direction: column;
+                gap: 30px;
+            }
+        }

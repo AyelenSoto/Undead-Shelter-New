@@ -1,0 +1,22 @@
+@import 'tailwindcss';
+@import './US-fondo.css';
+@import './US-letras.css';
+@import './US-sobreponer.css';
+@import './US-boton.css';
+@import './US-transiciones.css';
+@import './US-separador.css';
+@import './US-iconos.css';
+@import './US-imagen.css';
+@import './US-paginas.css';
+@import './US-formulario.css';
+@import './US-barra.css';
+
+@source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
+@source '../../storage/framework/views/*.php';
+@source '../**/*.blade.php';
+@source '../**/*.js';
+
+@theme {
+    --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+        'Segoe UI Symbol', 'Noto Color Emoji';
+}

@@ -1,0 +1,24 @@
+.margen2 {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor2 {
+    position: absolute;
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.barralateral {
+    position: fixed;
+    right: -5%;
+    top: 180px;
+    width: 250px; /* ajusta el ancho que quieras */
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 20px;
+    z-index: 1000;
+}
+

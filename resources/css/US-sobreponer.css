@@ -1,0 +1,6 @@
+.sobreponer{
+    position: absolute; /* Se coloca sobre la imagen */
+    top: 50%;           /* Ajusta posición vertical */
+    left: 50%; 
+    transform: translate(-50%, -50%); /* Centrado real */
+}

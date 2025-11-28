@@ -1,0 +1,55 @@
+.contenedor {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-top: 100px;
+}
+
+.item-cuadrado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.item-cuadrado h3 {
+    margin-top: 20px;
+    font-size: 18px;
+    font-family:'Courier New', Courier, monospace;
+    color: #ffffff;
+    line-height: 1.2; /* Reduce el interlineado */
+    text-align: center;
+}
+.cuadrado {
+    width: 210px;
+    height: 210px;
+    background: linear-gradient(135deg, #b70404, #7d0000, #610101);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+
+    box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.6),
+        inset 0 0 10px rgba(167, 2, 2, 0.9),
+        inset 0 -5px 15px rgba(0,0,0,0.3);
+
+    transition: 0.3s ease-in-out;
+}
+
+.cuadrado:hover {
+    box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 50px rgb(0, 0, 0),
+        inset 0 -8px 20px rgba(0,0,0,0.4);
+    transform: scale(1.05);
+}
+
+.icono{
+    font-size: 140px;
+    color: rgb(255, 255, 255);
+
+    filter: drop-shadow(0 0 05px rgba(255, 255, 255, 0.473))
+            drop-shadow(0 0 10px rgba(255, 255, 255, 0.625));
+    transition: filter 0.3s ease, transform 0.3s ease;
+}

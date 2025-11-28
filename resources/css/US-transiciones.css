@@ -1,0 +1,4 @@
+html {
+    scroll-behavior: smooth; /* Habilita el scroll suave */
+    overflow-x: hidden;      /* Evita scroll horizontal */
+}
