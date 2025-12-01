@@ -10,6 +10,9 @@
 @import './US-paginas.css';
 @import './US-formulario.css';
 @import './US-barra.css';
+@import './US-botonerror.css';
+@import './US-botoninicio.css';
+@import './US-barrahome.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

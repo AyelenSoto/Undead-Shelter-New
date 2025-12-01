@@ -92,56 +92,63 @@
             <div class="seccion-formularios">
             <div class="contenedorform ">
 
-                <form class="formulario-moderno" onsubmit="handleLogin(event)">
+                <form id="InicioSesion"method="POST" action="{{ route('login') }}" class="formulario-moderno">
+                    @csrf
+                    @if (session('error'))
+                        <div id="loginerror" class="btnerror">
+                            {{ session('error') }}
+                        </div>
+                    @endif
+                
                     <h2 class="titulo-form">Iniciar Sesión</h2>
-                <div class="form-group">
+
+                    <div class="form-group">
                         <label for="login-email">Correo Electrónico</label>
-                        <input type="email" id="login-email" placeholder="correo@ejemplo.com" required>
+                        <input type="email" id="login-email" name="email" placeholder="correo@ejemplo.com" required>
                     </div>
-    
+
                     <div class="form-group">
                         <label for="login-password">Contraseña</label>
-                        <input type="password" id="login-password" placeholder="Tu contraseña" required>
+                        <input type="password" id="login-password" name="password" placeholder="Tu contraseña" required>
                     </div>
-    
-                    <button type="submit" class="btn-moderno">Entrar</button>
-                    <p class="texto-ayuda">¿Olvidaste tu contraseña?</p>
+                        <button type="submit" class="btn-moderno">Entrar</button>
+                        <p class="texto-ayuda">¿Olvidaste tu contraseña?</p>
                 </form>
 
            
-                <form class="formulario-moderno" onsubmit="handleRegister(event)">
+                <form method="POST" action="{{ route('registrar') }}" class="formulario-moderno">
+                    @csrf
                     <h2 class="titulo-form">Crear Cuenta</h2>
-    
+
                     <div class="form-group">
                         <label for="nombre">Nombre Completo</label>
-                        <input type="text" id="nombre" placeholder="Ingresa tu nombre" required>
+                        <input type="text" id="nombre" name="nombre" placeholder="Ingresa tu nombre" required>
+
                     </div>
-    
+
                     <div class="form-group">
                         <label for="email">Correo Electrónico</label>
-                        <input type="email" id="email" placeholder="correo@ejemplo.com" required>
+                        <input type="email" id="email" name="email" placeholder="correo@ejemplo.com" required>
                     </div>
-    
+
                     <div class="form-group">
                         <label for="password">Contraseña</label>
-                        <input type="password" id="password" placeholder="Mínimo 8 caracteres" required minlength="8">
+                        <input type="password" id="password" name="password" placeholder="Mínimo 8 caracteres" required minlength="8">
                     </div>
-    
+
                     <div class="form-group">
                         <label for="ubicacion">Ubicación Actual</label>
-                        <input type="text" id="ubicacion" placeholder="Ciudad o zona segura">
+                        <input type="text" id="ubicacion" name="ubicacion" placeholder="Ciudad o zona segura">
                     </div>
-    
+
                     <div class="form-check-custom">
-                        <input type="checkbox" id="terminos" required>
+                        <input type="checkbox" id="terminos" name="terminos" required>
                         <label for="terminos">Acepto compartir mi ubicación</label>
                     </div>
-    
-                    <button type="submit" class="btn-moderno">Registrarse</button>
+                        <button type="submit" class="btn-moderno">Registrarse</button>
                 </form>
             </div>
-        </div>
-
+            </div>
         </div>
         <div id="Redes">
             <div class="separador"></div>

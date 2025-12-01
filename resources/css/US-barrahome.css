@@ -1,0 +1,48 @@
+.margen3{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
+.sidebar {
+    width: 200px;
+    height: 100vh;
+    background: #2c3e50;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px 0;
+}
+
+.sidebar h2 {
+    padding: 0 20px;
+    margin: 0 0 30px 0;
+    font-size: 20px;
+    text-align: center;
+}
+
+.sidebar-btn {
+    width: 100%;
+    padding: 15px 20px;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    text-align: left;
+    transition: 0.3s;
+}
+
+.sidebar-btn:hover {
+    background: #34495e;
+}
+
+.sidebar-btn.active {
+    background: #3498db;
+    font-weight: bold;
+}
+
+    /* CONTENIDO PRINCIPAL */

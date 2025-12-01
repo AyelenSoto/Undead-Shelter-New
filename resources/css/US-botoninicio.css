@@ -1,0 +1,20 @@
+.btninicio {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    top: 65%; /* altura desde la parte superior, ajusta según tu diseño */
+    position: absolute;
+    text-align: center;
+    color: white; 
+    background:rgba(255, 243, 5, 0.408); 
+    padding: 10px 85px;
+    border-radius:5px; 
+    margin-bottom:10px;
+    z-index: 10;
+
+    box-shadow: 
+        0 0 18px rgba(255, 255, 1, 0.9),
+        inset 0 0 5px rgb(255, 255, 0),
+        inset 0 -8px 20px rgba(255, 255, 255, 0.4);
+    transform: scale(1.05);
+
+}

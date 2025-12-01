@@ -2,6 +2,11 @@
     background-color: black; 
     min-height: 500vh; /* Altura de la página */   
 }
+
+.fondo2 {
+    background-color: black; 
+} 
+
 .imagen {
     position: relative;
     width: 100vw;
