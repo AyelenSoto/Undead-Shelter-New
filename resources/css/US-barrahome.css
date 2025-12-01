@@ -56,19 +56,30 @@
     position: absolute;
     width: 80%;
     padding: 14px;
-    background: linear-gradient(135deg, #7a0101 0%, #500101 100%);
+    background: linear-gradient(135deg, #b70404, #7d0000, #6a0707);
     border: none;
     border-radius: 10px;
+    font-weight: bold;
     color: white;
     font-size: 16px;
     cursor: pointer;
-    transition: all 0.3s ease;
     text-transform: uppercase;
-
-    position: absolute;
-    bottom: 160px;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
+}
+.btnbarra:hover {
+    box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 5px rgb(69, 2, 2),
+        inset 0 -8px 5px rgba(0,0,0,0.4);
+    transform: translateX(-50%) scale(1.00); /* <- mantener translateX */
+
+}
+
+.btnbarra.active {
+    background: #5c0202;
+    font-weight: bold;
 }
 
 /* Contenedor del usuario en la barra */
@@ -76,17 +87,18 @@
     position: absolute;
     display: flex;           /* Coloca imagen y nombre en línea */   
     align-items: center;
-    margin-top: 70px;
+    margin-top: 180px;
+    margin-bottom: 20px;
     margin-left: 15%;
     margin-right: 10%;
 }
 
 /* Imagen del usuario */
 .sidebar-user img {
-    width: 20px;             /* Ancho de la imagen */
-    height: 20px;            /* Alto de la imagen */
-    border-radius: 50%;      /* Imagen redonda */
-    margin-right: 10px;      /* Separación entre imagen y nombre */
+    width: 40px;             /* Ancho de la imagen */
+    height: 40px;            /* Alto de la imagen */    
+    margin-right: 5px;      /* Separación entre imagen y nombre */
+    margin-left: -5%;
 }
 
 /* Nombre del usuario */
@@ -94,4 +106,15 @@
     color: #fff;            
     font-size: 18px;      
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+}
+
+.separador2{
+    width: 200px;               /* ancho del rectángulo */
+    height: 1.7px;              /* alto del rectángulo */
+    background-color: #740505;  /* color del rectángulo */
+    border-radius: 10px;        /* esquinas redondeadas opcional */
+    margin: 0 auto;  
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.616);
+    transition: all 0.3s ease;
 }
