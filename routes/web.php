@@ -22,8 +22,8 @@ Route::post('/registrar', [AuthController::class, 'registrar'])->name('registrar
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 
 /* Conexión a vistsas*/
-Route::get('/home', [HomeController::class, 'index']);
-Route::get('/centro-recursos', [CRecursosController::class, 'index']);
-Route::get('/guias', [GuiasController::class, 'index']);
-Route::get('/refugios', [RefugiosController::class, 'index']);
-Route::get('/salud', [SaludController::class, 'index']); 
+Route::get('/home', [HomeController::class, 'index'])->name('home');
+Route::get('/centro-recursos', [CRecursosController::class, 'index'])->name('centro-recursos');
+Route::get('/salud', [SaludController::class, 'index'])->name('salud');
+Route::get('/refugios', [RefugiosController::class, 'index'])->name('refugios');
+Route::get('/guias', [GuiasController::class, 'index'])->name('guias');

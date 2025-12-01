@@ -1,1 +1,7 @@
-<h1>HI 4</h1>
+@extends('layouts.app')
+
+@section('title', 'Recursos')
+
+@section('content')
+
+@endsection

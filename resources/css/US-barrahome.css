@@ -2,14 +2,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Courier New', Courier, monospace;
 }
 
 
 .sidebar {
+    position: relative;
     width: 200px;
     height: 100vh;
-    background: #2c3e50;
+    background: #570000a4;
     color: white;
     position: fixed;
     left: 0;
@@ -26,23 +26,72 @@
 
 .sidebar-btn {
     width: 100%;
-    padding: 15px 20px;
+    padding: 15px ;
+    padding-left: 30px;
     background: transparent;
     border: none;
     color: white;
-    font-size: 15px;
+    font-weight: bold;   
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
     cursor: pointer;
     text-align: left;
     transition: 0.3s;
 }
 
 .sidebar-btn:hover {
-    background: #34495e;
+    box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 5px rgb(69, 2, 2),
+        inset 0 -8px 5px rgba(0,0,0,0.4);
+    transform: scale(1.00);
 }
 
 .sidebar-btn.active {
-    background: #3498db;
+    background: #5c0202;
     font-weight: bold;
 }
 
-    /* CONTENIDO PRINCIPAL */
+.btnbarra {
+    position: absolute;
+    width: 80%;
+    padding: 14px;
+    background: linear-gradient(135deg, #7a0101 0%, #500101 100%);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    text-transform: uppercase;
+
+    position: absolute;
+    bottom: 160px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Contenedor del usuario en la barra */
+.sidebar-user {
+    position: absolute;
+    display: flex;           /* Coloca imagen y nombre en línea */   
+    align-items: center;
+    margin-top: 70px;
+    margin-left: 15%;
+    margin-right: 10%;
+}
+
+/* Imagen del usuario */
+.sidebar-user img {
+    width: 20px;             /* Ancho de la imagen */
+    height: 20px;            /* Alto de la imagen */
+    border-radius: 50%;      /* Imagen redonda */
+    margin-right: 10px;      /* Separación entre imagen y nombre */
+}
+
+/* Nombre del usuario */
+.sidebar-username {    
+    color: #fff;            
+    font-size: 18px;      
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;   
+}
