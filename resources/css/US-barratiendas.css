@@ -1,0 +1,122 @@
+/* SECCIÓN DE RECURSOS */
+.seccion-recursos {
+    padding: 35px 90px 40px 90px;
+    min-height: 100vh;
+}
+.seccion-recursos3,
+.seccion-recursos2 {
+    min-height: auto; /* ya no fuerza 100vh */
+    padding: 35px 90px 10px 90px; /* solo padding lateral, nada arriba ni abajo */
+}
+
+.titulo-recursos {
+    font-size: 60px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+}
+.titulo-recursos2 {
+    font-size: 60px;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.subtitulo-recursos {
+    font-size: 18px;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgba(255, 255, 255, 0.7);
+    margin-bottom: 15px;
+}
+
+/* SCROLL HORIZONTAL */
+.scroll-tiendas {
+    display: flex;
+    gap: 30px;
+    overflow-x: auto;
+    padding: 20px 0;
+    scroll-behavior: smooth;
+}
+
+
+/* Ocultar scrollbar pero mantener funcionalidad */
+.scroll-tiendas::-webkit-scrollbar {
+    height: 8px;
+}
+
+.scroll-tiendas::-webkit-scrollbar-track {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+}
+
+.scroll-tiendas::-webkit-scrollbar-thumb {
+    background: #7d8083;
+    border-radius: 10px;
+}
+
+.scroll-tiendas::-webkit-scrollbar-thumb:hover {
+    background: #8a8d90;
+}
+
+/* TARJETA DE TIENDA */
+.tarjeta-tienda {
+    min-width: 350px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.tarjeta-tienda:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    border-color: rgba(255, 255, 255, 0.3);
+}
+
+.tarjeta-tienda img {
+    width: 100%;
+    height: 240px;
+    object-fit: cover;
+}
+
+/* INFO DE LA TIENDA */
+.info-tienda {
+    padding: 20px;
+}
+
+.nombre-tienda {
+    font-size: 24px;
+    color: white;
+    font-weight: bold;
+    margin: 0 0 10px 0;
+}
+
+.estado {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+
+.estable {
+    color: #4ade80;
+    background: rgba(74, 222, 128, 0.1);
+    border: 1px solid #4ade80;
+}
+
+.inestable {
+    color: #f87171;
+    background: rgba(248, 113, 113, 0.1);
+    border: 1px solid #f87171;
+}
+
+.descripcion-tienda {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 10px 0 0 0;
+}

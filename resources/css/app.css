@@ -13,6 +13,12 @@
 @import './US-botonerror.css';
 @import './US-botoninicio.css';
 @import './US-barrahome.css';
+@import './US-titulosvistas.css';
+@import './US-barratiendas.css';
+@import './US-mapa.css';
+@import './US-subtivistas.css';
+@import './US-post.css';
+@import './US-botiquin.css';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';

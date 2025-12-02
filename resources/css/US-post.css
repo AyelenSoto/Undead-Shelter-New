@@ -1,0 +1,95 @@
+.btnpost {
+    display: block;                /* Evita comportamientos raros */
+    margin: 30px auto 0;           /* Centrado REAL sin position absolute */
+    width: 80%;
+    max-width: 300px;              /* Evita que se haga gigante en pantallas grandes */
+    padding: 14px;
+    background: linear-gradient(135deg, #b70404, #7d0000, #6a0707);
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    text-transform: uppercase;
+    text-align: center;
+    transition: 0.2s ease-in-out;   /* Suave en hover */
+}
+
+.btnpost:hover {
+    box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 5px rgb(69, 2, 2),
+        inset 0 -8px 5px rgba(0,0,0,0.4);
+    transform: scale(1.02);         /* AUMENTA sin mover */
+}
+
+.btnpost:active {
+    background: #5c0202;
+    transform: scale(0.98);
+}
+
+/* Tarjeta contenedora */
+.guia-card {
+    background: rgba(20, 20, 20, 0.7);
+    border: 2px solid #7d0000;
+    border-radius: 5px;
+    padding: 20px;
+    color: white;
+    backdrop-filter: blur(3px);
+}
+
+/* Título del post */
+.guia-titulo {
+    font-size: 28px;
+    color: #ff4444;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-bottom: 10px;
+}
+
+/* Contenido */
+.guia-contenido {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Autor */
+.guia-autor {
+    margin-top: 12px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #ffffff94;
+}
+
+/* Inputs */
+.guia-input {
+    width: 100%;      /* Ocupa todo el ancho del contenedor */
+    box-sizing: border-box; /* Incluye padding y border en el ancho */
+    min-height: 80px; /* Ajusta altura mínima */
+    padding: 8px;
+    font-size: 14px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical; /* Permite cambiar altura pero no ancho */
+}
+
+
+/* Alerta de publicación */
+.guia-alerta {
+    padding: 10px;
+    background: #4caf50;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.formgrupo input,
+.formgrupo textarea {
+    min-width: 800px; /* aumenta el ancho mínimo */
+    min-height: 50px; /* aumenta la altura de los inputs */
+}
+
+/* Para los textareas más altos */
+.formgrupo textarea {
+    min-height: 300px; /* más alto si quieres */
+}
