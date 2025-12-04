@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
+use App\Models\CentroSalud;
 
 class SaludController extends Controller
 {
     public function index()
     {
-        return view('US-Salud');
+        $centros = CentroSalud::all();
+        return view('US-Salud', compact('centros'));
     }
 }

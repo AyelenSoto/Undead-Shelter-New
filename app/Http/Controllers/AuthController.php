@@ -21,7 +21,7 @@ class AuthController extends Controller
         // Intentar login
         if (Auth::attempt($request->only('email', 'password'))) {
             $request->session()->regenerate();
-            return redirect('/home')->with('success', 'Bienvenido.');
+            return redirect('/home')->with('success', 'Bienvenido');
         }
 
         return redirect('/#InicioSesion')->with('error', 'Credenciales incorrectas.');

@@ -65,16 +65,19 @@ class PostController extends Controller
     
 
     // Eliminar post
-    public function destroy($id)
-    {
-        $post = Post::findOrFail($id);
+public function destroy($id)
+{
+    $post = Post::findOrFail($id);
 
-        if ($post->user_id !== auth()->id()) {
-            return redirect()->route('guias')->with('error', 'No puedes eliminar esta publicación.');
-        }
-
-        $post->delete();
-
-        return redirect()->route('guias')->with('success', 'Publicación eliminada correctamente.');
+    // Permitir eliminar si es admin (ID 1) O si es el dueño del post
+    if (auth()->id() !== 1 && $post->user_id !== auth()->id()) {
+        return redirect()->route('guias')->with('error', 'No puedes eliminar esta publicación.');
     }
+
+    $post->delete();
+
+    return redirect()->route('guias')->with('success', 'Publicación eliminada correctamente.');
+}
+
+
 }
