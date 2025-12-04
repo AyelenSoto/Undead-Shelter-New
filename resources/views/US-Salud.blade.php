@@ -69,51 +69,27 @@
 <!-- SECCIÓN DE CENTROS DE SALUD -->
 <div class="seccion-recursos2">
     <h1 class="titulo-recursos">Centros de Salud Disponibles en Arequipa</h1>
-    <p class="subtitulo-recursos">Aquí encontrarás hospitales y centros de salud que aún están operativos. Estos lugares proporcionan atención médica básica y suministros esenciales para quienes los necesiten.</p>
-    
-    <!-- SCROLL HORIZONTAL DE CENTROS -->
+    <p class="subtitulo-recursos">
+        Aquí encontrarás hospitales y centros de salud que aún están operativos. 
+        Estos lugares proporcionan atención médica básica y suministros esenciales 
+        para quienes los necesiten.
+    </p>
+
     <div class="scroll-tiendas">
-        
-        <!-- CENTRO 1 -->
-        <div class="tarjeta-tienda">
-            <img src="{{ asset('images/HospitalRegional.jpg') }}" alt="Hospital Regional Arequipa">
-            <div class="info-tienda">
-                <h3 class="nombre-tienda">Hospital Regional Arequipa</h3>
-                <span class="estado estable">● Estable</span>
-                <p class="descripcion-tienda">Atención de emergencia y consultas generales</p>
-            </div>
-        </div>
+        @foreach ($centros as $centro)
+            <div class="tarjeta-tienda">
+                <img src="{{ asset($centro->imagen) }}" alt="{{ $centro->nombre }}">
+                <div class="info-tienda">
+                    <h3 class="nombre-tienda">{{ $centro->nombre }}</h3>
 
-        <!-- CENTRO 2 -->
-        <div class="tarjeta-tienda">
-            <img src="{{ asset('images/EssaludArequipa.jpg') }}" alt="ESSALUD Arequipa">
-            <div class="info-tienda">
-                <h3 class="nombre-tienda">ESSALUD Arequipa</h3>
-                <span class="estado inestable">● Inestable</span>
-                <p class="descripcion-tienda">Atención limitada, disponibilidad de camas reducida</p>
-            </div>
-        </div>
+                    <span class="estado {{ strtolower($centro->estado) == 'estable' ? 'estable' : 'inestable' }}">
+                        ● {{ ucfirst($centro->estado) }}
+                    </span>
 
-        <!-- CENTRO 3 -->
-        <div class="tarjeta-tienda">
-            <img src="{{ asset('images/ClinicaArequipa.jpg') }}" alt="Clínica Arequipa">
-            <div class="info-tienda">
-                <h3 class="nombre-tienda">Clínica Arequipa</h3>
-                <span class="estado estable">● Estable</span>
-                <p class="descripcion-tienda">Consultas privadas y suministros médicos básicos</p>
+                    <p class="descripcion-tienda">{{ $centro->descripcion }}</p>
+                </div>
             </div>
-        </div>
-
-        <!-- CENTRO 4 -->
-        <div class="tarjeta-tienda">
-            <img src="{{ asset('images/HospitalHonorio.jpg') }}" alt="Hospital Honorio Delgado">
-            <div class="info-tienda">
-                <h3 class="nombre-tienda">Hospital Honorio Delgado</h3>
-                <span class="estado estable">● Estable</span>
-                <p class="descripcion-tienda">Atención de emergencias y especialidades médicas</p>
-            </div>
-        </div>
-
+        @endforeach
     </div>
 </div>
 

@@ -39,6 +39,23 @@
                 rutas seguras y guías simples que ayuden a cualquier superviviente<br>
                 que aún permanezca ahí afuera.<br>
                 En este mundo roto, cada información cuenta.</p> <br>
+            <div class="s-wrapper">
+                <div class="s-scroller">
+
+            @foreach($imagenes2 as $img2)
+                <div class="s-item">
+                    <img src="{{ asset($img2->imagen2) }}" alt="{{ $img2->titulo }}">
+                </div>
+                @endforeach
+            @foreach($imagenes2 as $img2)
+                <div class="s-item">
+                    <img src="{{ asset($img2->imagen2) }}" alt="{{ $img2->titulo }}">
+                 </div>
+             @endforeach
+       </div>
+</div>
+
+        
         </div> 
 
         <div id="Servicios">
@@ -154,9 +171,19 @@
             <div class="separador"></div>
             <h1 class="subtitulosoposicion subtitulos">Redes Sociales</h1>
             <div class="separador"></div>
-        </div>
-    
-        
+            <p class="texto tamañotexto-3">Conoce nuestras redes sociales, enterate de lo nuevo de Undead Shelter.
+                <br>
+
+            <div class="b-container" >
+                <a href="https://www.instagram.com/undead_shelter123/" target="_blank" class="b-social b-instagram">
+                    <i class="bi bi-instagram"></i>
+                </a>
+  
+                <a href="https://www.tiktok.com/@undeadshelter" target="_blank" class="b-social b-tiktok">
+                    <i class="bi bi-tiktok"></i>
+                </a>
+            </div>
+        </div> 
     </div>
 </body>
 </html> 

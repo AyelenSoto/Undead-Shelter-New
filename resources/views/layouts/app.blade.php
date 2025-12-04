@@ -16,7 +16,16 @@
 </head>
 <body class="fondo2">
   @include('components.US-barra')
-  
+  <div>
+    @if (session('success'))         
+        <div class="btninicio">
+         {{ session('success') }}
+        </div>
+    @endif
+
+
+  </div>
+
   <div>
     @yield('content')
   </div>

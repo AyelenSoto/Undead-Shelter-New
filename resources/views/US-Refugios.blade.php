@@ -41,8 +41,8 @@
     // ===================================
     //     ZONAS DE DEMOSTRACIÓN AQP
     // ===================================
-    const zonas = [
-     {
+  const zonas = [
+  {
     nombre: "Estadio Monumental de la UNSA",
     estado: "Refugio Temporal",
     color: "green",
