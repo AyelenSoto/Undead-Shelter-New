@@ -57,6 +57,10 @@
     background: #8a8d90;
 }
 
+
+
+
+
 /* TARJETA DE TIENDA */
 .tarjeta-tienda {
     min-width: 350px;
@@ -119,4 +123,169 @@
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     margin: 10px 0 0 0;
+}
+
+
+
+
+/* TARJETA DE DETALLE */
+#detalle-tienda {
+    display: none;
+    margin-top: 35px;
+    padding: 30px;
+    border: 3px solid #640707;
+    border-radius: 12px;
+    background: linear-gradient(135deg, #2f0101 0%, #511515 100%);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.detalle-contenido {
+    display: flex;
+    gap: 25px;
+    align-items: stretch;
+}
+
+#detalle-imagen {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.4);
+    border: 3px solid #640707;
+}
+
+/* ——— TITULO MODERNO ——— */
+#detalle-nombre {
+    font-size: 40px;
+    font-weight: 900;
+    font-family: 'Impact', Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+
+    /* Gradiente moderno */
+    background: linear-gradient(90deg, #ffffff, #f9dede);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.detalle-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#detalle-estado-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    align-self: flex-start;
+}
+
+.detalle-seccion-titulo {
+    font-size: 20px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #ffffff;
+    margin-top: 0;
+    margin-bottom: 12px;
+    border-bottom: 2px solid #7c0707;
+    padding-bottom: 6px;
+}
+
+#detalle-sobre {
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.6;
+    color: #ffffff;
+    background-color: rgba(50, 2, 2, 0.66);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: justify;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+    flex-grow: 1;
+}
+
+.btn-detalle {
+    margin-top: auto;
+    padding: 12px 35px;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    background: linear-gradient(135deg, #7c0707 0%, #640707 100%);
+    border: 2px solid #3b0303;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(124, 7, 7, 0.4);
+    align-self: flex-start;
+}
+
+.btn-detalle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(124, 7, 7, 0.6);
+    background: linear-gradient(135deg, #640707 0%, #3b0303 100%);
+}
+
+.btn-detalle:active {
+    transform: translateY(0);
+}
+
+/* ——— RESPONSIVE ——— */
+@media (max-width: 768px) {
+
+    #detalle-tienda {
+        padding: 20px;
+    }
+
+    .detalle-contenido {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #detalle-imagen {
+        width: 100%;
+        height: 220px;
+    }
+
+    /* Título responsive */
+    #detalle-nombre {
+        font-size: 30px;
+        letter-spacing: 1.5px;
+        text-shadow: 
+            0 0 6px rgba(255, 90, 90, 0.4),
+            0 0 12px rgba(255, 90, 90, 0.2);
+    }
+
+    .detalle-seccion-titulo {
+        font-size: 17px;
+    }
+
+    #detalle-sobre {
+        font-size: 14px;
+    }
+
+    .btn-detalle {
+        width: 100%;
+        padding: 12px 20px;
+        font-size: 15px;
+    }
 }

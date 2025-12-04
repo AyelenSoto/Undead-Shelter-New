@@ -1,6 +1,6 @@
 #Nosotros{
     margin-top: 50px;
-    margin-bottom: 180px;
+
     position: relative;
     z-index: 20;
 }
@@ -12,6 +12,13 @@
 }
 
 #Preparados {
+    margin-top: 5px;
+    margin-bottom: 200px;
+    position: relative;
+    z-index: 20;
+}
+
+#Redes {
     margin-top: 5px;
     margin-bottom: 200px;
     position: relative;

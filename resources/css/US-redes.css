@@ -1,0 +1,47 @@
+
+/* Contenedor de botones */
+.b-container {
+  position: absolute;
+  display: flex;
+  gap: 35px;
+  padding: 20px;
+  width: 220px;   
+  right: 28%;
+  top: 270px;
+  bottom: 85px;
+
+}
+
+/* Botón base */
+.b-social {
+  border-radius: 8px;
+  background: rgb(99, 0, 0);
+  border: 2px solid #8d0404;
+  width: 10px;
+  padding: 50px 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+      box-shadow: 
+        0 0 10px rgba(255, 0, 0, 0.6),
+        inset 0 0 10px rgba(167, 2, 2, 0.9),
+        inset 0 -5px 15px rgba(0,0,0,0.3);
+}
+
+/* Hover effect */
+.b-social:hover {
+
+  background: linear-gradient(135deg, #9b0303 0%, #550303 100%);
+  color: rgb(0, 0, 0);
+  border-color: #750303;
+  box-shadow: 
+        0 0 18px rgba(250, 14, 14, 0.9),
+        inset 0 0 50px rgb(0, 0, 0),
+        inset 0 -8px 20px rgba(0,0,0,0.4);
+    transform: scale(1.05);
+}

@@ -19,6 +19,9 @@
 @import './US-subtivistas.css';
 @import './US-post.css';
 @import './US-botiquin.css';
+@import './US-scrollhome.css';
+@import './US-redes.css';
+
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
 @source '../../storage/framework/views/*.php';
